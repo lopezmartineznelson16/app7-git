@@ -4,11 +4,11 @@
     document.addEventListener("diviceready",function(){
 		
 		$('#izquierda').on("swipeleft",function(){
-			navigator.notification. alert ("deslizo a la izquierda",function(){"Aplicacion7","Aceptar"});
+			navigator.notification. alert("deslizo a la izquierda",function(){"Aplicacion7","Aceptar"});
 			
 });
-	$('#derecha').on("swipeleft",function(){
-			navigator.notification. alert ("¿Que quieres hacer?",function(opt){
+	$('#derecha').on("swiperight",function(){
+			navigator.notification. confirm("¿Que quieres hacer?",function(opt){
 				switch(opt) 
 				{
 					case 1:
